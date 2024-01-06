@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600;700&family=PT+Sans&family=Poppins:wght@200;400;500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(Assets/img/bg.jpg);
+  height:85vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1500px, 100vw);
+  position: relative;
+}
+.main .box {
+  top: 0;
+  height:85vh;
+  width: 100%;
+  opacity: 0.8;
+  background-color: black;
+  position: absolute;
+}
+nav {
+  display: flex;
+  max-width: 76vw;
+  margin: auto;
+  height: 95px;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 9.25rem;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.hero, .last-hero{
+  display: flex;
+  /* width: 70vw; */
+  flex-direction: column;
+  height: calc(100% - 151px);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  gap: 18px;
+  padding: 28px;
+
+  text-align: center;
+
+}
+.hero > :first-child {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+}
+.hero > :nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.hero > :nth-child(3) {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.separation {
+  height: 7px;
+  background-color: rgb(63, 63, 63);
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: 400;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.btn-red-sm {
+  color: white;
+  background-color: red;
+  border-radius: 4px;
+  padding: 6px 15px;
+  cursor: pointer;
+}
+.btn-lang{
+  background-color: rgba(23, 23, 23, 0.75);
+  border: 0.6px solid rgba(207, 207, 207, 0.5);
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  width: 120px;
+  padding: 6px 15px ;
+}
+.btn-red {
+  color: white;
+  background-color: red;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.input-email{
+  padding: 16px 20px;
+  width: 280px;
+
+  background-color: rgba(23, 23, 23, 0.75);
+  border: 0.6px solid rgba(207, 207, 207, 0.5);
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
+.input{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.first{
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  height: 75vh;
+  margin: auto;
+  /* flex-wrap: wrap; */
+}
+.first>div :nth-child(1){
+  font-size: 48px;
+  font-weight: 800;
+}
+.first>div :nth-child(2){
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.secimg{
+  position: relative;
+}
+.secimg img{
+  width: 450px;
+  position: relative;
+  z-index: 10;
+}
+.secimg video{
+  position: absolute;
+  top: 71px;
+  right: 66px;
+  width: 335px;
+}
+
+.second{
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  max-width: 65vw;
+  height: 75vh;
+  margin: auto;
+  /* flex-wrap: wrap; */
+}
+.second div :nth-child(1){
+  font-size: 48px;
+  font-weight: 800;
+}
+.second div :nth-child(2){
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.third{
+  max-width: 65vw;
+  /* flex-wrap: wrap; */
+}
+.forth{
+  max-width: 70vw;
+  /* flex-wrap: wrap; */
+}
+
+@media screen and (max-width: 1250px) {
+  .first{
+    flex-wrap: wrap;
+  }
+  .second{
+    flex-wrap: wrap;
+  }
+  .third{
+    flex-wrap: wrap;
+  }
+  .forth{
+    flex-wrap: wrap;
+  }
+}
+
+h1{
+  color: white;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bolder;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.faqbox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50vw;
+  padding: 20px;
+  margin: 10px auto;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 1.5rem;
+}
+.faqbox:hover{
+  background-color: rgb(37, 36, 36);
+  color: white;
+}
+
+.last-hero > :nth-child(1) {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.last-hero{
+  height: 25vh;
+  margin-bottom: 25px;
+}
+
+footer{
+  /* max-width: 60vw; */
+  color: white;
+  max-width: 65vw;
+  margin: auto;
+  margin-top: 35px;
+}
+footer a{
+  color: white;
+  font-size: 14px;
+}
+.question{
+  padding: 30px 0px;
+}
+.footer{
+  max-width: 60vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-item{
+  display: flex;
+  flex-direction: column;
+  gap: 10px 20px;
+}
+@media screen and (max-width: 1250px){
+  .footer{
+    grid-template-columns: 1fr 1fr;
+  }
+}
